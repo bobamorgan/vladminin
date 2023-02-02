@@ -3,24 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <title>IT Plan :: Index</title>
+    <link href="styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <h1>Прогресс в IT</h1>
-    <hr />
-    <h2>Обучение</h2>
-    <ul>
-        <li>html</li>
-        <ul>
-            <li>vladminin 1,5 часа</li>
+    <div class="container">
+      <div class="info">
+        <img
+          src="https://geekflare.com/wp-content/uploads/2022/10/Coding.png"
+          alt="Учусь IT"
+          class="pageheader"
+        />
+        <div class="info-text">
+          <h1>Обучение IT</h1>
+          <p>Учусь программировать по бесплатным материалам из интернета.</p>
+          <p>Внимательно выбираю направление для специализации.</p>
+          <h3>Источники</h3>
+          <a href="https://www.youtube.com/" target="_blank">Youtube</a> |
+          <a href="https://t.me/" target="_blank">Telegram</a>
+        </div>
+      </div>
+
+      <div class="card bg-green">
+        <h3>Разделы</h3>
+        <ol class="list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>С#</li>
+        </ol>
+      </div>
+
+      <div class="card bg-yellow">
+        <h3>Список материалов</h3>
+        <ul class="link-list">
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=DOEtVdkKwcU"
+              target="_blank"
+              >HTML для Начинающих - Практический Курс</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=SpCUuyZZTp8"
+              target="_blank"
+              >CSS для Начинающих - Практический Курс</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/watch?v=w8rRhAup4kg"
+              target="_blank"
+              >C# 2022 С НУЛЯ ДО ПРОФИ | СЛИВ ЛУЧШЕГО КУРСА</a
+            >
+          </li>
         </ul>
-        <li>css</li>
-        <li>javascript</li>
-        <li>c#
-            <ul>
-                <li>ijunior.ru 6/9 часов</li>
-            </ul>
-        </li>
-    </ul>
+      </div>
+
+      <div class="card bg-red">
+        <h3>Прогресс</h3>
+        <table class="table">
+          <tr>
+            <td>HTML vladminin</td>
+            <td>1h 19m</td>
+            <td>1h</td>
+          </tr>
+          <tr>
+            <td>CSS vladminin</td>
+            <td>1h</td>
+            <td>1h</td>
+          </tr>
+          <tr>
+            <td>C# ijunior.ru</td>
+            <td>6h 30m</td>
+            <td>4h 30m</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>0h</td>
+            <td>0h</td>
+          </tr>
+          <tr>
+            <td>React</td>
+            <td>0h</td>
+            <td>0h</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="editor">
+        <h3>Редактор компонентов</h3>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Название:</label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Введите название..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="url">URL:</label>
+              <input type="text" name="url" placeholder="Введите url..." />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="description">Описание</label>
+            <textarea name="description" rows="5" cols="20"></textarea>
+          </div>
+          <input class="btn" type="submit" value="Сохранить" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
